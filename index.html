@@ -12,14 +12,14 @@
     Moengage = moe({
       app_id: moeAppID,
       debug_logs: 1,
-      swPath: "serviceworker.js"
+     
     
     });
     </script>
 
          <script type="text/javascript">
 
-                navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+                navigator.serviceWorkerContainer.register('serviceworker.js').then(function(registration) {
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
                      }, function(err) {
                 console.log('ServiceWorker registration failed: ', err);
