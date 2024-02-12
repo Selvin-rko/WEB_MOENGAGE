@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="manifest" href="/manifest.json"/> 
+    <link rel="manifest" href="/manifest.json"/>
 
     <script type="text/javascript">
     var moeDataCenter = "dc_1"; // Replace "DC" with the actual Data center value from the above table
@@ -12,13 +12,9 @@
     Moengage = moe({
       app_id: moeAppID,
       debug_logs: 1,
-
-
-
-        
-});
+    swPath: "/serviceworker.js",
     
-
+    });
     </script>
 
 
@@ -74,11 +70,11 @@
         Moengage.add_mobile(Phone);
 
    } ;
-//function WebPush()
-//{
-//    Moengage.call_web_push();
+function WebPush()
+{
+    Moengage.call_web_push();
 
-//}
+}
 
 
 
